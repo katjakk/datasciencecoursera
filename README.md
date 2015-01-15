@@ -6,7 +6,7 @@ The directory should contain the following files and subdirectories:
 > list.files()
 [1] "UCI HAR Dataset"     "cleaned.csv"         "rownames.csv"        "run_analysis.R" 
 ```
-It is important that "run_analysis.R" is able to read "UCI HAR Dataset" directory in the current working directory.
+It is important to run "run_analysis.R" in the current working directory to be able to read "UCI HAR Dataset".
 
 Run script with:
 ```
