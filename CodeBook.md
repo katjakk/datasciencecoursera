@@ -11,7 +11,7 @@ Run script with:
 > "UCI HAR Dataset"     "cleaned.csv"         "rownames.csv"        "run_analysis.R"
 ```
 # The variables & The data
-Variable outcomes:
+Outcome Variables:
 - **activities** is a string list that contains all the activities in a string format and is referred by an index.
 - **dat** is a data.frame and contains the final data set written into the file. Should contain 180 rows and 79 columns.
 - **features** is a string list that contains all the features in a string format and is referred by an index.
@@ -20,6 +20,8 @@ Variable outcomes:
 - **getdataf** is a nested function to get data for each data set, test and train in this case ```getdataf(dirname="UCI HAR Dataset", subdir="train")```.
 
 # Transformations and work performed to clean up the data 
+Steps done in the script:
+
 1. **activities** are read from "UCI HAR Dataset/activity_labels.txt".
 2. **features** are read from "UCI HAR Dataset/features.txt".
 3. **found** truth table is constructed based on ```grepl("mean|std",features[i])``` values.
